@@ -19,7 +19,8 @@ def count_groups_size_from_zero(n_customers):
             groups[group_num] += 1
         else:
             groups[group_num] = 1
-    print(groups)
+    for key, value in groups.items():
+        print("Группа", key, " Количество", value)
 
 def count_groups_size(n_first_id, n_customers):
     groups = {}
@@ -30,6 +31,9 @@ def count_groups_size(n_first_id, n_customers):
             groups[group_num] += 1
         else:
             groups[group_num] = 1
-    print(groups)
+    for key, value in groups.items():
+        print("Группа", key, " Количество", value)
 
 count_groups_size(10000, 453212)
+
+
